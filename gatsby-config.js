@@ -6,4 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdx`,
+        path: `${__dirname}/src/mdx/`,
+      },
+    },
+    `gatsby-plugin-mdx`,
+  ],
 }
